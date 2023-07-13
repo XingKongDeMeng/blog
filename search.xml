@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/07/09/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>计算机基础</title>
+    <url>/2023/07/01/%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h1>Course overview + the shell</h1>
+<p>在 shell 中，程序有两个与之关联的主要“流”：它们的输入流和输出流。当程序尝试读取输入时，它会从输入流中读取，当它打印某些内容时，它会打印到其输出流。通常，程序的输入和输出都是您的终端。也就是说，您的键盘作为输入，您的屏幕作为输出。但是，我们也可以重新连接这些流！<br>
+最简单的重定向形式是 <code>&lt; file</code> 和 <code>&gt; file</code> 。这些允许您将程序的输入和输出流分别重新连接到文件：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">echo hello &gt; hello.txt</span><br><span class="line">cat hello.txt</span><br><span class="line">hello</span><br><span class="line">cat &lt; hello.txt</span><br><span class="line">hello</span><br><span class="line">cat &lt; hello.txt &gt; hello2.txt</span><br><span class="line">cat hello2.txt</span><br><span class="line">hello</span><br></pre></td></tr></table></figure>
+<p>&lt; 表示将这个程序的输入重定向为这个文件的内容<br>
+&gt;表示将前面程序的输出重定向到这个文件中 ;    &gt;&gt;表示追加<br>
+| 管道符，作用是将左边程序的输出作为右边程序的输入 |<br>
+grep可以让你在输入流中搜索指定的关键字，sudo中su指的是超级用户，这是以超级用户的身份执行操作的一种方式，它将以root用户的身份运行该命令。</p>
+<p>tee命令会将输入内容写入一个文件，同时也将他输出到标准输出</p>
+<h1>Shell Tools and Scripting</h1>
+<blockquote>
+<p>在使用bash的时候，空格非常关键，它用于分割参数的字符。</p>
+</blockquote>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mtext>是我们正在运行的脚本的文件名</mtext></mrow><annotation encoding="application/x-tex">0是我们正在运行的脚本的文件名
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">0</span><span class="mord cjk_fallback">是我们正在运行的脚本的文件名</span></span></span></span>#是我们给该命令的参数数量</p>
+<p>bash 中的字符串可以使用 <code>'</code> 和 <code>&quot;</code> 分隔符定义，但它们并不等效。分隔的 <code>'</code> 字符串是文字字符串，不会替换变量值，而 <code>&quot;</code> 分隔字符串会。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">foo=bar</span><br><span class="line">echo &quot;$foo&quot;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">prints bar</span></span><br><span class="line">echo &#x27;$foo&#x27;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">prints <span class="variable">$foo</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mcd ()&#123;</span><br><span class="line">	mkdir -p &quot;$1&quot;</span><br><span class="line">	cd &quot;$1&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>与大多数编程语言一样，bash 支持控制流技术，包括 <code>if</code> 、 <code>case</code> 和 <code>while</code> <code>for</code> 。同样，具有 <code>bash</code> 接受参数并可以使用它们进行操作的函数。该函数创建一个目录并 <code>cd</code> s 到其中.</p>
+<p>这是 <code>$1</code> 脚本/函数的第一个参数。与其他脚本语言不同，bash 使用各种特殊变量来引用参数、错误代码和其他相关变量。</p>
+<ul>
+<li><code>$0</code> - Name of the script<br>
+<code>$0</code> - 脚本名称</li>
+<li><code>$1</code> to <code>$9</code> - Arguments to the script. <code>$1</code> is the first argument and so on.<br>
+<code>$1</code> to <code>$9</code> - 脚本的参数。 <code>$1</code> 是第一个参数，依此类推。</li>
+<li><code>$@</code> - All the arguments<br>
+<code>$@</code> - 所有参数</li>
+<li><code>$#</code> - Number of arguments<br>
+<code>$#</code> - 参数数量</li>
+<li><code>$?</code> - Return code of the previous command<br>
+<code>$?</code> - 返回上一个命令的代码</li>
+<li><code>$$</code> - Process identification number (PID) for the current script<br>
+<code>$$</code> - 当前脚本的进程标识号 （PID）</li>
+</ul>
+<p><code>!!</code> - 整个最后一个命令，包括参数。一种常见的模式是仅执行命令，使其由于缺少权限而失败;你可以通过 <code>sudo !!</code> 快速重新执行命令。</p>
+<p><code>$_</code> - 最后一个命令的最后一个参数。如果您在交互式 shell 中，还可以通过键入 <code>Esc</code> 后跟 <code>.</code> or <code>Alt+.</code> 来快速获取此值。</p>
+<p>返回代码或退出状态是脚本/命令必须传达执行方式的方式。值为 0 通常表示一切正常;任何与 0 不同的值都表示发生了错误。</p>
+<p><code>true</code> 程序将始终具有 0 返回代码， <code>false</code> 命令将始终具有 1 返回代码。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">false || echo &quot;Oops, fail&quot;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Oops, fail</span></span><br><span class="line"></span><br><span class="line">true || echo &quot;Will not be printed&quot;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash"></span></span><br><span class="line"><span class="language-bash"></span></span><br><span class="line">true &amp;&amp; echo &quot;Things went well&quot;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Things went well</span></span><br><span class="line"></span><br><span class="line">false &amp;&amp; echo &quot;Will not be printed&quot;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash"></span></span><br><span class="line"><span class="language-bash"></span></span><br><span class="line">true ; echo &quot;This will always run&quot;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">This will always run</span></span><br><span class="line"></span><br><span class="line">false ; echo &quot;This will always run&quot;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">This will always run</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">diff &lt;(ls foo) &lt;(ls bar)</span><br></pre></td></tr></table></figure>
+<p>该命令将显示目录foo和bar中的文件之间的差异</p>
+<blockquote>
+<p>? 匹配一个字符                 * 匹配任意数量字符</p>
+</blockquote>
+<p>大括号 <code>&#123;&#125;</code> - 每当在一系列命令中有一个公共子字符串时，就可以使用 bash 的大括号来自动扩展它。这在移动或转换文件时非常方便。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">convert image.&#123;png,jpg&#125;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Will <span class="built_in">expand</span> to</span></span><br><span class="line">convert image.png image.jpg</span><br><span class="line"></span><br><span class="line">cp /path/to/project/&#123;foo,bar,baz&#125;.sh /newpath</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Will <span class="built_in">expand</span> to</span></span><br><span class="line">cp /path/to/project/foo.sh /path/to/project/bar.sh /path/to/project/baz.sh /newpath</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Globbing techniques can also be combined</span></span><br><span class="line"></span><br><span class="line">mv *&#123;.py,.sh&#125; folder</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Will move all *.py and *.sh files</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">mkdir foo bar</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">This creates files foo/a, foo/b, ... foo/h,bar/a, bar/b, ...bar/h</span></span><br><span class="line">touch &#123;foo,bar&#125;/&#123;a.h&#125;</span><br><span class="line">touch foo/x bar/y</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Show differences between files <span class="keyword">in</span> foo and bar</span></span><br><span class="line">diff &lt;(ls foo) &lt;(ls bar)</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Outputs</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">&lt; x</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">---</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">&gt; y</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">!/usr/local/bin/python</span></span><br><span class="line">import sys</span><br><span class="line">for arg in reversed(sys.argv[1:]):</span><br><span class="line">	print(arg)</span><br></pre></td></tr></table></figure>
+<p>内核知道使用 python 解释器而不是 shell 命令来执行此脚本，因为我们在脚本顶部包含一个 shebang 行。最好使用 <code>env</code> 命令编写 shebang 行，该命令将解析到命令在系统中的任何位置，从而提高脚本的可移植性。为了解析位置， <code>env</code> 将利用我们在第一讲中介绍的环境 <code>PATH</code> 变量。</p>
+<p><em>shell函数和脚本的区别</em><br>
+函数必须与 shell 使用相同的语言，而脚本可以用任何语言编写。这就是为什么为脚本包含 shebang 很重要的原因。</p>
+<p>函数在读取其定义时加载一次。每次执行脚本时都会加载脚本。这使得函数的加载速度略快，但每当您更改它们时，您都必须重新加载它们的定义。</p>
+<p>函数在当前 shell 环境中执行，而脚本在自己的进程中执行。因此，函数可以修改环境变量，例如更改当前目录，而脚本则不能。脚本将由已导出的值 <code>export</code> 环境变量传递</p>
+<p><em>find 函数</em></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Find all directories named src</span></span><br><span class="line">find . -name src -type d</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Find all python files that have a floder named <span class="built_in">test</span> <span class="keyword">in</span> their path</span></span><br><span class="line">find . -path &#x27;*/test/*.py&#x27; -type f</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Find all files modified <span class="keyword">in</span> the last day</span></span><br><span class="line">find . -mtime -1</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Find all zip files with size <span class="keyword">in</span> range 500k to 10M</span></span><br><span class="line">find . size +500k -size -10M -name &#x27;*.tar.gz&#x27;</span><br></pre></td></tr></table></figure>
+<p>除了列出文件之外，find 还可以对与您的查询匹配的文件执行操作。此属性对于简化可能相当单调的任务非常有帮助。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Delete all files with .tmp extension</span></span><br><span class="line">find . -name &#x27;*.tmp&#x27; -exec rm &#123;&#125; \;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Find all PNG files and convert them to JPG</span></span><br><span class="line">find . -name &#x27;*.png&#x27; -exec convert &#123;&#125; &#123;&#125;.jpg \;</span><br></pre></td></tr></table></figure>
+<p>该 <code>history</code> 命令将允许您以编程方式访问 shell 历史记录。它会将您的外壳历史记录打印到标准输出。如果我们想在那里搜索，我们可以通过管道将该输出传输到 <code>grep</code> 并搜索模式。 <code>history | grep find</code> 将打印包含子字符串“find”的命令。</p>
+<h1>Editors(Vim)</h1>
+<h1>Data Wrangling</h1>
+<h1>Command-line Environment</h1>
+<h1>Version Control(Git)</h1>
+<h1>Debugging and Profiling</h1>
+<h1>Metaprogramming</h1>
+<h1>Security and Cryptography</h1>
+<h1>Potpourri</h1>
+<h1>Q&amp;A</h1>
+<div class="flink"><div class="flink-name">网站</div> <div class="flink-list">
+          <div class="flink-list-item">
+            <a href="https://www.youtube.com/" title="Youtube" target="_blank">
+              <div class="flink-item-icon">
+                <img class="no-lightbox" src="https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="Youtube" />
+              </div>
+              <div class="flink-item-name">Youtube</div> 
+              <div class="flink-item-desc" title="视频网站">视频网站</div>
+            </a>
+          </div>
+          <div class="flink-list-item">
+            <a href="https://www.bilibili.com/" title="bilibili" target="_blank">
+              <div class="flink-item-icon">
+                <img class="no-lightbox" src="https://xingkong-1.oss-cn-hangzhou.aliyuncs.com/Demo/bilibili.svg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="bilibili" />
+              </div>
+              <div class="flink-item-name">bilibili</div> 
+              <div class="flink-item-desc" title="学习平台">学习平台</div>
+            </a>
+          </div></div></div>]]></content>
+  </entry>
+</search>
