@@ -108,4 +108,71 @@ grep可以让你在输入流中搜索指定的关键字，sudo中su指的是超�
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title></title>
+    <url>/2023/07/16/%E7%AC%AC2%E7%AB%A0%20%E7%89%9B%E9%A1%BF%E8%BF%90%E5%8A%A8%E5%AE%9A%E5%BE%8B/</url>
+    <content><![CDATA[<p>牛顿第一定律（惯性定律）</p>
+<ul>
+<li>任何物体都将保持静止或匀速直线运动状态，直到其他物体的作用迫使它改变这种状态为止。</li>
+</ul>
+<ol>
+<li><strong>力的作用</strong>——力是改变物体运动状态的原因</li>
+<li><strong>惯性</strong>——物体不受力作用时，总保持其原来运动状态不变的属性。牛顿第一定律，又称“惯性定律”</li>
+<li><strong>惯性参考系</strong>——对牛顿第一定律成立的参考系，称为惯性参考系。</li>
+</ol>
+<p>牛顿第二定律<br>
+物体所获得的加速度大小与物体所受的合外力的大小成正比，与物体的质量成反比，加速度的方向与合外力的方向相同$$\vec F=m\vec a$$</p>
+<ol>
+<li><strong>适用范围</strong>——牛顿第二定律只适用于处理惯性系中宏观低速（远小于光速）物体的运动</li>
+<li><strong>合外力</strong>——定律中的外力是指合外力</li>
+<li><strong>瞬时性</strong>——力与加速度的关系是瞬时关系，有力作用必有加速度</li>
+<li><strong>矢量性</strong>——力与加速度的关系是矢量关系，在讨论物体一般运动时，可应用下列投影式进行处理：<br>
+直角坐标系中的投影式：</li>
+</ol>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo fence="true">{</mo><mtable rowspacing="0.16em" columnalign="center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><msub><mi>F</mi><mi>x</mi></msub><mo>=</mo><mi>m</mi><msub><mi>a</mi><mi>x</mi></msub></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><msub><mi>F</mi><mi>y</mi></msub><mo>=</mo><mi>m</mi><msub><mi>a</mi><mi>y</mi></msub></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><msub><mi>F</mi><mi>z</mi></msub><mo>=</mo><mi>m</mi><msub><mi>a</mi><mi>z</mi></msub></mrow></mstyle></mtd></mtr></mtable></mrow><annotation encoding="application/x-tex">\left \{ \begin{array}{c} F_x=ma_x \\ F_y=ma_y \\ F_z=ma_z \end{array} \right.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.6em;vertical-align:-1.55em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-2.5em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎩</span></span></span><span style="top:-2.492em;"><span class="pstrut" style="height:3.15em;"></span><span style="height:0.016em;width:0.8889em;"><svg xmlns="http://www.w3.org/2000/svg" width='0.8889em' height='0.016em' style='width:0.8889em' viewBox='0 0 888.89 16' preserveAspectRatio='xMinYMin'><path d='M384 0 H504 V16 H384z M384 0 H504 V16 H384z'/></svg></span></span><span style="top:-3.15em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎨</span></span></span><span style="top:-4.292em;"><span class="pstrut" style="height:3.15em;"></span><span style="height:0.016em;width:0.8889em;"><svg xmlns="http://www.w3.org/2000/svg" width='0.8889em' height='0.016em' style='width:0.8889em' viewBox='0 0 888.89 16' preserveAspectRatio='xMinYMin'><path d='M384 0 H504 V16 H384z M384 0 H504 V16 H384z'/></svg></span></span><span style="top:-4.3em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎧</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal">m</span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.01em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">y</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal">m</span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">y</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span><span style="top:-1.81em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.04398em;">z</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal">m</span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.04398em;">z</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<p>自然坐标系中的投影式：$$\left { \begin{array}{c} F_t=ma_t=m{dv\over dt} \ F_n=ma_n=m{v^2\over \rho}  \end{array} \right .$$<br>
+SI单位：力：牛顿（N）；质量m：千克（kg）<br>
+牛顿第三定律</p>
+<ul>
+<li>两物体之间的作用力与反作用力总是大小相等、方向相反，并作用于同一直线上。</li>
+</ul>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mover accent="true"><mi>F</mi><mo>⃗</mo></mover><mo>=</mo><mo>−</mo><msup><mover accent="true"><mi>F</mi><mo>⃗</mo></mover><mo separator="true">⋅</mo></msup></mrow><annotation encoding="application/x-tex">\vec F=-\vec F^·
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9663em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9663em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1522em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg xmlns="http://www.w3.org/2000/svg" width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
+3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
+10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
+-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
+-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
+H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0497em;vertical-align:-0.0833em;"></span><span class="mord">−</span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9663em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1522em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg xmlns="http://www.w3.org/2000/svg" width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
+3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
+10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
+-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
+-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
+H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7241em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mpunct mtight">⋅</span></span></span></span></span></span></span></span></span></span></span></span></p>
+<ol>
+<li>作用力与反作用力总是成对出现</li>
+<li>作用力与反作用力必属同一性质的力（如弹性力、摩擦力等）</li>
+</ol>
+<p>万有引力：任何两物体之间都存在的相互吸引力。$$F=G{m_1m_2\over r^2}$$<br>
+地球对表面附近物体的万有引力称为重力$$F_G=mg$$<br>
+牛顿运动定律的应用举例</p>
+<ul>
+<li><strong>知运动求力——微分问题</strong><br>
+已知质点的质量m和运动学方程$$\vec r=\vec r(t)$$求作用在质点上的力，称为动力学第一类基本问题<br>
+<strong>方法：</strong> 用求导法算出$$\vec a={d^2\vec r\over dt^2}$$由牛顿第二定律得$$\vec F=m\vec a$$</li>
+</ul>
+<hr>
+<p><img src="https://obsidian--1.oss-cn-hangzhou.aliyuncs.com/img_for_obsidian/20230614210808.png" alt="image.png"></p>
+<hr>
+<ul>
+<li>知力求运动——积分问题<br>
+已知作用在质点m上的力和初始条件，求质点的运动（规律）状态$$\vec r和\vec v$$称为<strong>动力学第二类基本问题</strong><br>
+方法：用积分法求解微分方程<br>
+<img src="https://obsidian--1.oss-cn-hangzhou.aliyuncs.com/img_for_obsidian/20230614211434.png" alt="image.png"><br>
+<img src="https://obsidian--1.oss-cn-hangzhou.aliyuncs.com/img_for_obsidian/20230615082553.png" alt="image.png"></li>
+</ul>
+]]></content>
+  </entry>
 </search>
