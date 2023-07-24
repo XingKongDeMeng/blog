@@ -90,22 +90,303 @@ grep可以让你在输入流中搜索指定的关键字，sudo中su指的是超�
           </div></div></div>]]></content>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/07/09/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start">Quick Start</h2>
-<h3 id="Create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>电路</title>
+    <url>/2023/07/24/%E7%94%B5%E8%B7%AF/</url>
+    <content><![CDATA[<p><strong>电容越串越小越并越大</strong></p>
+<p>当电容器串联时，它们的等效电容值会减小。这是因为串联电容器的电荷量是相同的，但电压分配在各个电容器上，导致每个电容器上的电压降低。由于电容器的电荷量与电压成正比，因此每个电容器上的电荷量也会减少。根据电容器的定义，电容值等于电容器上的电荷量与电压的比值，因此串联电容器的等效电容值会减小。</p>
+<p>当电容器并联时，它们的等效电容值会增大。这是因为并联电容器的电压是相同的，但电荷分配在各个电容器上，导致每个电容器上的电荷量增加。由于电容器的电荷量与电压成正比，因此每个电容器上的电压量也会增加。根据电容器的定义，电容值等于电容器上的电荷量与电压的比值，因此并联电容器的等效电容值会增大。</p>
+<p>这可以通过以下公式进行计算：</p>
+<p>对于串联电容器：<br>
+1/CT = 1/C1 + 1/C2 + 1/C3 + …</p>
+<p>对于并联电容器：<br>
+CT = C1 + C2 + C3 + …</p>
+<p>其中CT是串联或并联电容器的等效电容值，C1、C2、C3等是各个电容器的电容值。</p>
+<p>需要注意的是，以上情况仅适用于理想的电容器，即没有内部电阻和其他复杂的电容器特性。在实际应用中，可能存在一些非理想因素，如电容器之间的耦合、电容器的损耗等，可能会对结果产生一定的影响。</p>
+<p><strong>电感则相反</strong></p>
+<p>对于电感器（电感元件），串联和并联时的行为与电容器正好相反。</p>
+<p>当电感器串联时，它们的等效电感值会增大。这是因为串联电感器的电流是相同的，但电压在各个电感器上分配，导致每个电感器上的电压增加。由于电感器的电流与磁场的强度成正比，因此每个电感器上的磁场强度也会增加。根据电感器的定义，电感值等于磁场强度与电流的比值，因此串联电感器的等效电感值会增大。</p>
+<p>当电感器并联时，它们的等效电感值会减小。这是因为并联电感器的电压是相同的，但电流分配在各个电感器上，导致每个电感器上的电流减小。由于电感器的电流与磁场的强度成正比，因此每个电感器上的磁场强度也会减小。根据电感器的定义，电感值等于磁场强度与电流的比值，因此并联电感器的等效电感值会减小。</p>
+<p>这可以通过以下公式进行计算：</p>
+<p>对于串联电感器：<br>
+LT = L1 + L2 + L3 + …</p>
+<p>对于并联电感器：<br>
+1/LT = 1/L1 + 1/L2 + 1/L3 + …</p>
+<p>其中LT是串联或并联电感器的等效电感值，L1、L2、L3等是各个电感器的电感值。</p>
+<p>需要注意的是，以上情况同样适用于理想的电感器，即没有内部电阻和其他复杂的电感器特性。在实际应用中，也可能存在一些非理想因素，如电感器之间的耦合、电感器的饱和等，可能会对结果产生一定的影响。</p>
+<p><strong>参考方向</strong></p>
+<p>一个元件的电流和电压的参考方向可以独立地任意指定。如果指定流过元件的电流的参考方向是从标以电压正极性的一端指向负极性的一端，即两者的参考方向一致，则把电流和电压的这种参考方向称为<strong>关联参考方向</strong>，当两者不一致时，称为<strong>非关联参考方向</strong>。</p>
+<ul>
+<li>P=UI，当P&gt;0时，该元件为<strong>负载型</strong>，P&lt;0时该元件为<strong>电源型</strong>。</li>
+</ul>
+<h2 id="基尔霍夫定理">基尔霍夫定理</h2>
+<p><strong>基尔霍夫电流定律（KCL）</strong>：在集总电路中，任何时刻，对任一结点，所有流出结点的支路电流的代数和恒等于零。（也就是任何时刻，流出任一结点的支路电流等于流入该结点的支路电流）<br>
+对任一结点有$$\sum i=0$$<br>
+<strong>基尔霍夫电压定律（KVL）</strong>：在集总电路中，任何时刻，沿任一回路，所有支路电压的代数和恒等于零，所以，沿任一回路有$$\sum u = 0$$<br>
+电阻的星形联接和三角形联接可等效互换，已知对称时三角形的三个电阻都为R，则星形电阻为1/3R</p>
+<p>负载获得最大功率的条件时$$R_L = R_0$$<br>
+负载的最大功率为$$P_{max}={U^2_s\over4R_0}$$<br>
+电路分析的直接对象是那些实用的电磁器件所构成的<strong>电路模型</strong></p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>U</mi><mrow><mi>A</mi><mi>B</mi></mrow></msub><mo>=</mo><mfrac><msub><mi>W</mi><mrow><mi>A</mi><mi>B</mi></mrow></msub><mi>q</mi></mfrac></mrow><annotation encoding="application/x-tex">U_{AB}={W_{AB}\over q}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.109em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">A</span><span class="mord mathnormal mtight" style="margin-right:0.05017em;">B</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.2408em;vertical-align:-0.8804em;"></span><span class="mord"><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">q</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">A</span><span class="mord mathnormal mtight" style="margin-right:0.05017em;">B</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8804em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></span></p>
+<p>当参考点改变时，电路中各点的电位值将随之改变，任意两点间的电压值将不变</p>
+<p>电感元件对<strong>正弦交流电流</strong>有<strong>阻碍</strong>作用，其在直流电路中可视为<strong>短路</strong></p>
+<p>RLC串联电路在一定条件下会发生谐振，其条件是$$W_0={1\over\sqrt[]{LC}}$$或者$$f_0={1\over2\pi\sqrt[]{LC}}$$<br>
+若电源电压有效值固定，则谐振时电路的电流<strong>最大</strong></p>
+<p><strong>有效值、频率、初相位</strong>称为正弦量的三要素</p>
+<blockquote>
+<p>电容的电流可以跃变，电感的电压可以跃变<br>
+同一个一阶电路的零状态响应、零输入响应和全响应的时间常数<strong>相同</strong></p>
+</blockquote>
+<p><strong>电压源：</strong> 它的电压u（t）与通过元件的电流无关，总保持为给定的时间函数，而电流的大小则由外电路决定。</p>
+<p><strong>电流源：</strong> 它的电流i（t）与元件的端电压无关，并总保持为给定的时间函数。电流源的端电压由外电路决定</p>
+<p>我们常说的<strong>负载大</strong>是指用电设备的<strong>电流</strong></p>
+<p><strong>电导</strong><br>
+当电压单位用V，电流单位用A时，电阻单位用欧<br>
+令$$G={1\over R}$$<br>
+变成$$i=Gu$$<br>
+其中G称为电阻元件的电导。电导的单位是S（西门子，简称西）。R和G都是电阻元件的参数。</p>
+<p><strong>阻抗</strong></p>
+<blockquote>
+<p>在具有电阻、电感和电容的电路里，对电路中的电流所起的阻碍作用叫做阻抗。阻抗常用Z表示，是一个复数，实部称为电阻，虚部称为电抗，其中电容在电路中对交流电所起的阻碍作用称为容抗 ,电感在电路中对交流电所起的阻碍作用称为感抗，电容和电感在电路中对交流电引起的阻碍作用总称为电抗。 阻抗的单位是欧姆。阻抗的概念不仅存在于电路中，在力学的振动系统中也有涉及。</p>
+</blockquote>
+<p>在R、L、C串联电路中，电感（L）和电容（C）分别表示电路中的感性元件和容性元件。当电感（Xl）的阻抗大于电容（Xc）的阻抗时，电路呈感性。</p>
+<p>感性元件（电感）的阻抗（Xl）与频率成正比，而容性元件（电容）的阻抗（Xc）与频率成反比。在串联电路中，总阻抗（Z）等于电阻（R）与电感（Xl）和电容（Xc）的阻抗之和。</p>
+<p>当Xl&gt;Xc时，感性元件的阻抗大于容性元件的阻抗。这意味着在总阻抗中，感性元件的影响比容性元件更显著。</p>
+<p>根据欧姆定律，电流（I）等于总电压（V）除以总阻抗（Z）。</p>
+<p>如果感性元件的阻抗大于容性元件的阻抗，那么总阻抗（Z）将更接近感性元件的阻抗（Xl）。这导致电流滞后于总电压，即电流相对于电压有一定的相位差。具体来说，电流滞后于电压的程度取决于感性元件和容性元件的阻抗差异。</p>
+<p>因此，当Xl&gt;Xc时，电路呈感性，电流滞后于总电压。这是由于感性元件和容性元件的阻抗差异导致的相位差。</p>
+<p><strong>在正弦交流电路中，容性元件的电压与电流相位差为-90——0<br>
+感性元件的电压与电流相位差为0——90<br>
+不在-90——90范围，为交流电源</strong></p>
+<p><strong>零输入响应</strong>：动态电路中无外施激励电源，仅由动态元件初始储能所产生的响应</p>
+<p><strong>零状态响应</strong>：电路在零初始状态下（动态元件初始储能为零）由外施激励引起的响应</p>
+<blockquote>
+<p>n个电压源的串联，可以用一个电压源等效替代<br>
+n个电流源的并联，可以用一个电流源等效替代</p>
+</blockquote>
+<p><strong>只有激励电压相等且极性一致的电压源才允许并联，否则违背KVL<br>
+只有激励电流相等且方向一致的电流源才允许串联，否则违背了KCL</strong></p>
+<p>对于具有n个结点的电路，在任意（n-1）个结点上可以得出（n-1）个独立的KCL方程。相应的（n-1）个结点称为独立结点。</p>
+<blockquote>
+<p>电源电压包括电源的激励电压，也包括由电流源引起的等效激励电压</p>
+</blockquote>
+<p><strong>列出支路电流法的电路方程的步骤</strong></p>
+<ol>
+<li>选定各支路电流的参考方向</li>
+<li>对（n-1）个独立结点列出KCL方程</li>
+<li>选取（b-n+1）个独立回路，指定回路的绕行方向，列出KVL方程，</li>
+<li>网孔数就是KVL方程数</li>
+</ol>
+<blockquote>
+<p>支路电流法要求b个支路电压均能以支路电流表示。</p>
+</blockquote>
+<p><strong>网孔电流法</strong></p>
+<p>在网孔电流法中，以网孔电流作为电路的独立变量，它仅适用于平面电路。</p>
+<h2 id="二端网络">二端网络</h2>
+<p>若一个电路只通过两个输出端与外电路相联，则该电路称为“二端网络”，它分为有源二端网络和无源二端网络。</p>
+<h2 id="叠加定理">叠加定理</h2>
+<blockquote>
+<p>在线性电路中，有几个独立电源共同作用时，各支路的响应（电流或电压）等于各个独立电源单独作用时在该支路产生的响应（电流或电压）的代数和。</p>
+</blockquote>
+<ul>
+<li>线性电路——由线性元件、独立源或线性受控源构成的电路</li>
+<li>单独作用：一个电源作用，其余电源不作用（置零）</li>
+<li>叠加时，要注意电流和电压的参考方向。原电路中各电压、电流的最后结果是各分电压、分电流的代数和。</li>
+<li>叠加定理只能用于电压或电流的计算，不能叠加电路的功率和电能等二次函数关系的物理量。</li>
+</ul>
+<h2 id="戴维南定理">戴维南定理</h2>
+<blockquote>
+<p>任何一个含有独立电源、线性电阻和线性受控源的二端网络，对外电路来说，可以用一个电压源和电阻的串联组合来等效替代。</p>
+</blockquote>
+<p>此电压源的电压等于外电路断开时端口处的开路电压，而电阻等于二端网络中全部独立电源置零后的端口等效电阻。</p>
+<h2 id="诺顿定理">诺顿定理</h2>
+<blockquote>
+<p>任何一个有源二端线性网络都可以用一个电流为Is的理想电流源和内阻R0并联的电源来等效代替</p>
+</blockquote>
+<p><img src="https://obsidian--1.oss-cn-hangzhou.aliyuncs.com/img_for_obsidian/20230607172309.png" alt="image.png"></p>
+<p>等效电源的电流Is就是有源二端网络的短路电流，即将a，b两端短接后其中的电流。<br>
+等效电源的内阻R0等于有源二端网络中所有电源均除去（理想电压源短路，理想电流源开路）后所得到的无源二端网络a，b两端之间的等效电阻。</p>
+<p><strong>诺顿定理解题步骤</strong></p>
+<ol>
+<li>将待求支路断开，剩余的电路作为有源二端网络，画出有源二端网络与待求支路断开后再短路的电路，并求短路电流Is，即为等效电流源的恒流源电流。</li>
+<li>画出有源二端网络与待求支路断开且除源后的电路，求无源网络的电阻R0，即为等效电流源的内阻。（除源方法：理想电压源短路，理想电流源开路）</li>
+<li>将有源二端网络等效为电流源模型，再与待求支路合为简单电路，画出合并后的等效电路图，用分流公式求电流。</li>
+</ol>
+<h2 id="一阶电路和二阶电路的时域分析">一阶电路和二阶电路的时域分析</h2>
+<p>一阶电路：如果电路中只含有一个电容/电感，则该电路属于一阶电路</p>
+<ul>
+<li>微分方程的阶数取决于动态元件的个数和电路的结构</li>
+<li>当电路中含有二个或n个动态元件时，建立的方程为二阶微分方程或n阶微分方程</li>
+<li>含有动态元件的电路称为动态电路</li>
+<li>动态电路的一个特征是当电路的结构或元件的参数发生变化时（例如电路中电源或无源元件的断开或接入，信号的突然注入等），可能使电路改变原来的工作状态，转变到另一个工作状态，折中转变往往需要经历一个过程，称为过渡过程。</li>
+<li>上述电路结构或参数变化引起的电路变化统称为“换路”</li>
+</ul>
+<p>换路前的最终时刻记为0-，换路后的最初时刻记为0+，换路经历的时间为0-到0+</p>
+<p><strong>换路瞬间，可把电容看作电压源，把电感看作电流源</strong></p>
+<p><strong>零输入响应</strong>（换路以后的电路中是否含有独立源）<br>
+电路换路后无独立源作用，仅由储能元件释放能量而产生的响应，称为零输入响应。</p>
+<p>电感元件不消耗有功功率，它消耗的是无功功率。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>树莓派</title>
+    <url>/2023/07/24/%E6%A0%91%E8%8E%93%E6%B4%BE/</url>
+    <content><![CDATA[<h2 id="树莓派简介">树莓派简介</h2>
+<ul>
+<li>由树莓派基金会开发的一种微型单板计算机，又称<strong>卡片式计算机</strong></li>
+</ul>
+<p><img src="https://obsidian--1.oss-cn-hangzhou.aliyuncs.com/img_for_obsidian/raspberry.png" alt="树莓派"></p>
+<p><strong>树莓派4B</strong></p>
+<ul>
+<li>2.4GHz和5.0GHz IEEE 802.11ac无线，蓝牙5.0，BLE（蓝牙低功耗），CSI（摄像头接口），DSI（显示器接口），千兆以太网</li>
+<li>BCM2711，四核Cotex-A72（ARMv8）64位Soc @1.5Ghz</li>
+<li>支持H.265(4kP60解码)，H.264(1080P60解码，1080P30编码)</li>
+<li>可充当NAS（网络附加存储服务器）,内有GUI（图形用户接口）</li>
+<li>SSH连接（Secure Shell）</li>
+</ul>
+<h2 id="树莓派GPIO的使用">树莓派GPIO的使用</h2>
+<h3 id="树莓派上使用wiringPi库">树莓派上使用wiringPi库</h3>
+<p><strong>wiringPi库</strong>是一个用C语言编写的库，用于访问树莓派上用于BCM2835（Broadcom处理器）Soc（片上系统）的GPIO引脚</p>
+<p>卸载已有的wiringPi库</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt-get -y remove wiringpi</span><br></pre></td></tr></table></figure>
+<p>或者</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt -y purge wiringpi</span><br></pre></td></tr></table></figure>
+<p>清空记录中的程序位置信息</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hash -r</span><br></pre></td></tr></table></figure>
+<p>下载最新的wiringPi库，并存放在/tmp目录下，然后执行安装</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /tmp</span><br><span class="line">wget https://project-downloads.drogon.net/wiringpi-latest.deb</span><br><span class="line">sudo dpkg -i wiringpi-latest.deb</span><br></pre></td></tr></table></figure>
+<h2 id="树莓派I2C功能的使用">树莓派I2C功能的使用</h2>
+<p><strong>I2C</strong>总线(集成电路总线)，是一种串行通信总线，使用多主从架构，由飞利浦公司在1980年开发，主要是为了让主板、嵌入式系统或者手机用来连接低速的周边设备。</p>
+<p><img src="https://obsidian--1.oss-cn-hangzhou.aliyuncs.com/img_for_obsidian/20230606093332.png" alt="image.png"></p>
+<p>树莓派一般情况下是充当着主机（Master）的角色，从机（Slave）一般都是传感器、屏幕等。用户可以通过两根线来进行数据通信：一根是SDA（数据线）；另一根是SCL，通常用来设置时钟。</p>
+<p>打开I2c配置</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo raspi-config</span><br></pre></td></tr></table></figure>
+<p>查看是否开启I2C功能</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo grep i2c /boot/config.txt</span><br></pre></td></tr></table></figure>
+<p>安装<strong>i2c-tools</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt update</span><br><span class="line">sudo apt -y install i2c-tools</span><br></pre></td></tr></table></figure>
+<p>安装完成后，输入以下命令进行检测</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo i2cdetect -y 1</span><br></pre></td></tr></table></figure>
+<p><strong>I2C协议的其他应用</strong><br>
+市面上很多的I2C设备都可以通过上面的方式进行接入和操作，例如LCD1602液晶屏模块、OLED0.91显示屏模块、MPU6050陀螺仪模块、BMP180气压计模块，很多慢速的设备都可以通过I2C接入并且通过其I2C的地址来进行控制，控制的方式就是向地址写入或者从地址读取信息然后进行处理。</p>
+<h2 id="树莓派SPI介绍及应用实例">树莓派SPI介绍及应用实例</h2>
+<p><strong>SPI协议概述</strong><br>
+SPI（Serial Peripheral Interface）是串行外围设备接口，是由Motorola首先在其MC68HCXX系列处理器上定义的。SPI接口主要应用在EEPROM、Flash、实时时钟、AD转换器，以及数字信号处理器和数字信号解码器之间。SPI是一种高速、全双工、同步的通信总线，并且在芯片的引脚上只占用四根线，节约了芯片的引脚，同时为PCB的布局节省了空间，提供方便。目前大多数的单片机和开发板都集成了这种通信协议。</p>
+<h2 id="树莓派UART串口介绍及应用实例">树莓派UART串口介绍及应用实例</h2>
+<h2 id="树莓派PWM介绍">树莓派PWM介绍</h2>
+<h2 id="树莓派开源网络应用案例">树莓派开源网络应用案例</h2>
+]]></content>
+  </entry>
+  <entry>
+    <title>计算机常见单词</title>
+    <url>/2023/07/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<h1>基础知识</h1>
+<p>应用程序会将内存主要分为两部分，栈和堆.</p>
+<p>栈对象：有一个自动的生存期，他们的生存期实际上是由它声明的地方作用域决定的，只要变量超出作用域，内存就被释放了。</p>
+<p>堆：一旦在堆中分配了一个对象，实际上你已经在堆上创造了一个对象，在堆上分配，需要手动delete，这可能会导致内存泄漏。</p>
+<p>智能指针：当你调用new时不用，你不需要调用delete，本质上是一个原始指针的包装，当你创建一个智能指针，它会调用new并为你分配内存，然后基于你使用的智能指针，这些内存会在某一时刻自动释放。</p>
+<p>头文件中用引号是会先检查相对路径，如果没有找到任何相对于这个文件的东西，就会去找编译器，它会检查编译器的include路径，如果是外部的就用尖括号。</p>
+<h1>一，交互式环境与print输出、</h1>
+<ol>
+<li>print：打印/输出</li>
+<li>coding：编码</li>
+<li>syntax：语法</li>
+<li>invalid：无效</li>
+<li>identifier：名称/标识符</li>
+<li>character：字符</li>
+</ol>
+<h1>二，字符串的操作</h1>
+<ol>
+<li>user：用户</li>
+<li>name：姓名/名称</li>
+<li>attribute：字段/属性</li>
+<li>value：值</li>
+<li>key：键</li>
+</ol>
+<h1>三，重复/转换/替换/原始字符串</h1>
+<ol>
+<li>upper：上面</li>
+<li>lower：下面</li>
+<li>capitalize：用大写字母写或印刷</li>
+<li>title：标题</li>
+<li>replace：替换</li>
+<li>old：旧的</li>
+<li>new：新的</li>
+<li>count：计数</li>
+<li>swap：互换</li>
+<li>case：情形</li>
+<li>path：路径</li>
+<li>project：项目</li>
+<li>test：测试</li>
+<li>file：文件</li>
+<li>data：数据</li>
+</ol>
+<h1>四，去除/查询/计数</h1>
+<ol>
+<li>strip：去除</li>
+<li>index：索引</li>
+<li>find：查找</li>
+<li>chars：字符</li>
+<li>sub：附属</li>
+</ol>
+<h1>五，获取输入/格式化</h1>
+<ol>
+<li>prompt：提示</li>
+<li>format：格式化</li>
+<li>args（argument）：参数</li>
+<li>kwargs：关键字参数</li>
+<li>year：年</li>
+</ol>
+<h1>六，元组</h1>
+<ol>
+<li>tuple：元组</li>
+<li>iterable：可迭代</li>
+<li>key：关键字</li>
+<li>function：方法/函数</li>
+<li>object：对象</li>
+</ol>
+<h1>七，列表</h1>
+<ol>
+<li>list：列表</li>
+<li>reverse：反向</li>
+<li>append：附加</li>
+<li>extend：扩展</li>
+<li>insert：插入</li>
+<li>pop：取出</li>
+<li>sort：排序</li>
+</ol>
+<h1>八，集合</h1>
+<ol>
+<li>set：集合/设置</li>
+<li>add：添加</li>
+<li>update：更新</li>
+<li>discard：丢弃</li>
+<li>intersection：相交</li>
+<li>union：联合</li>
+<li>symmetric：对称</li>
+<li>disjoint：不相交</li>
+<li>subset：子集</li>
+<li>superset：父集/超集</li>
+</ol>
+<h1>九，字典</h1>
+<ol>
+<li>dict：字典</li>
+<li>value：值</li>
+<li>item：项</li>
+<li>mapping：映射</li>
+<li>seq（sequence）：序列</li>
+<li>get：获取</li>
+<li>default：默认</li>
+<li>none：没有</li>
+<li>arg：可变元素</li>
+<li>kwargs（keyword args）：可变关键字元素</li>
+</ol>
+<h1>十，循环</h1>
+<ol>
+<li>sep（separate）：分隔</li>
+<li>flush：冲刷</li>
+<li>step：步长</li>
+</ol>
 ]]></content>
   </entry>
 </search>
